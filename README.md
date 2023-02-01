@@ -5,7 +5,7 @@ Este projeto é uma implementação de fluxo de trabalho de análise de dados fi
 Neste projeto específico, utilizamos a API Yfinance para baixar dados financeiros dos quatro maiores varejistas do Brasil, listados abaixo:
 
     CRFB3.SA - Carrefour
-    ASAI3.SA - GPA
+    ASAI3.SA - Assaí
     AMER3.SA - Lojas Americanas
     MGLU3.SA - Magazine Luiza
 
@@ -16,6 +16,7 @@ As operações DAG incluídas neste projeto baixam dados financeiros dessas empr
 Este projeto é uma ferramenta valiosa para investidores interessados em obter insights financeiros sobre as maiores empresas de varejo do Brasil, especialmente sobre a Lojas Americanas.
 
 Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow (https://airflow.apache.org/)e a API Yfinance (https://pypi.org/project/yfinance/).
+
 Instalação
 
 Para utilizar este projeto, você precisará ter o Apache Airflow instalado em sua máquina. As instruções de instalação podem ser encontradas em airflow.apache.org/docs/stable/installation.html.
@@ -34,4 +35,4 @@ Este projeto é aberto a contribuições. Se você deseja melhorar ou adicionar 
 
 ##Licença
 
-Este projeto está disponível sob a licença MIT.
+Este projeto está disponível sob a licença APACHE.
