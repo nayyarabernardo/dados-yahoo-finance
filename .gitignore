@@ -2,10 +2,11 @@
 
 .venv
 
-*.txt
+.nvenv
 
 .logs
-airflow.db
-transform.py
-load.py
-webserver_config.py
+
+*.txt
+*.pid
+
+
