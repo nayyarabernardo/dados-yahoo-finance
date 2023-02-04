@@ -7,6 +7,15 @@
 .logs
 
 *.txt
+
 *.pid
 
+logs/
 
+nvenv/
+
+webserver_config.py
+
+__pycache__/
+
+airflow.db
