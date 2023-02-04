@@ -3,3 +3,9 @@
 .venv
 
 *.txt
+
+.logs
+airflow.db
+transform.py
+load.py
+webserver_config.py
