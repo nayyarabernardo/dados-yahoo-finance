@@ -19,3 +19,4 @@ webserver_config.py
 __pycache__/
 
 airflow.db
+airflow.cfg
