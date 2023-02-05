@@ -1,13 +1,21 @@
-# Airflow Yfinance API Project
+# Apache Airflow: extração de dados da API do Yfinance  
+
+[![PyPI version](https://badge.fury.io/py/apache-airflow.svg)](https://badge.fury.io/py/apache-airflow)
+[![GitHub Build](https://github.com/apache/airflow/workflows/CI%20Build/badge.svg)](https://github.com/apache/airflow/actions)
+[![License](http://img.shields.io/:license-Apache%202-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/apache-airflow.svg)](https://pypi.org/project/apache-airflow/)
 
 Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow e a API Yfinance. A API Yfinance fornece informações financeiras em tempo real e históricas para uma ampla gama de ativos, incluindo ações, fundos imobiliários e criptomoedas.
 
 Neste projeto específico, utilizamos a API Yfinance para baixar dados financeiros dos quatro maiores varejistas do Brasil, listados abaixo:
 
-    CRFB3.SA - Carrefour
-    ASAI3.SA - Assaí
-    AMER3.SA - Lojas Americanas
-    MGLU3.SA - Magazine Luiza
+    
+| Empresa      | Ticket         |
+| ------------ | -------------- |
+| Carrefour    | CRFB3.SA       |
+| Assaí        | ASAI3.SA       |
+| Lojas Americanas    | AMER3.SA       |
+| Magazine Luiza        | MGLU3.SA       |
 
 Com o objetivo de realizar análises financeiras sobre essas empresas e, assim, ajudar investidores a tomar decisões informadas de investimento.
 
@@ -15,24 +23,31 @@ As operações DAG incluídas neste projeto baixam dados financeiros dessas empr
 
 Este projeto é uma ferramenta valiosa para investidores interessados em obter insights financeiros sobre as maiores empresas de varejo do Brasil, especialmente sobre a Lojas Americanas.
 
-Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow (https://airflow.apache.org/)e a API Yfinance (https://pypi.org/project/yfinance/).
+Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow e a API Yahoo Finance.
 
-Instalação
+## Instalação
 
-Para utilizar este projeto, você precisará ter o Apache Airflow instalado em sua máquina. As instruções de instalação podem ser encontradas em airflow.apache.org/docs/stable/installation.html.
+Iniciamos configurando o ambiente, instalando o Airflow e executando-o pela primeira vez. Recebemos avisos relacionados ao banco de dados SQLite e ao executor Sequential. Em seguida, conhecemos a biblioteca YFinance e criamos um DAG para extrair dados sobre ações das bolsas de valores.
 
-Além disso, você precisará instalar o módulo yfinance através do comando pip install yfinance.
+Configuramos um executor Local, instalamos o Postgres, criamos um banco de dados e um novo usuário para conectá-lo ao Airflow. Utilizamos o Celery, incluindo sua fila de tarefas e workers, e instalamos o Redis como mediador. Configuramos o Celery juntamente com um worker para executar as tarefas do nosso DAG.
 
-##Uso
+O parâmetro "worker_concurrency", que define a quantidade de tarefas simultâneas que um worker pode executar, foi definido, e criamos um novo DAG para extrair dados sobre OS Tickets selecionados.
+
+## Uso
 
 Este projeto inclui operações DAG que baixam dados financeiros de ativos específicos da API Yfinance, realizam análises e armazenam os resultados em um banco de dados relacional.
 
 Você pode configurar as informações dos ativos que deseja analisar, incluindo símbolo de ativo, período de tempo e frequência de atualização, nas variáveis de ambiente no arquivo config.py.
 
-##Contribuição
+## Contribuição
 
 Este projeto é aberto a contribuições. Se você deseja melhorar ou adicionar recursos, sinta-se à vontade para criar uma solicitação pull ou entrar em contato.
 
-##Licença
+## Licença
 
 Este projeto está disponível sob a licença APACHE.
+
+## Links
+
+- [Documentation Apache Airflow](https://airflow.apache.org/docs/stable/)
+- [Documentation API Yahoo Finance](https://python-yahoofinance.readthedocs.io/en/latest/)
