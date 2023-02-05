@@ -25,11 +25,34 @@ Este projeto é uma ferramenta valiosa para investidores interessados em obter i
 
 Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow e a API Yahoo Finance.
 
+**Índice**
+
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Links](#links)
+
+
 ## Instalação
 
 Iniciamos configurando o ambiente, instalando o Airflow e executando-o pela primeira vez. Recebemos avisos relacionados ao banco de dados SQLite e ao executor Sequential. Em seguida, conhecemos a biblioteca YFinance e criamos um DAG para extrair dados sobre ações das bolsas de valores.
 
+```bash
+pip install yfinance
+```
+
+```bash
+pip install apache-airflow==1.10.12 \
+ --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-1.10.12/constraints-3.7.txt"
+```
+
 Configuramos um executor Local, instalamos o Postgres, criamos um banco de dados e um novo usuário para conectá-lo ao Airflow. Utilizamos o Celery, incluindo sua fila de tarefas e workers, e instalamos o Redis como mediador. Configuramos o Celery juntamente com um worker para executar as tarefas do nosso DAG.
+
+
+```bash
+sudo apt install postgresql postgresql-contrib
+```
 
 O parâmetro "worker_concurrency", que define a quantidade de tarefas simultâneas que um worker pode executar, foi definido, e criamos um novo DAG para extrair dados sobre OS Tickets selecionados.
 
