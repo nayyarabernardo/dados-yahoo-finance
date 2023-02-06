@@ -24,14 +24,6 @@ def get_stocks(ds, **kwargs):
     for ticket in tickets:
         if not os.path.exists(ticket):
             os.makedirs(ticket)
-
-        # stock_info = yf.Ticker(ticket)
-        # hist = stock_info.history(period="1d",
-        #     interval="1h",
-        #     start=ds_add(ds, -1),
-        #     end=ds,
-        #     prepost=True)
-        # hist.to_csv(f"{ticket}/{ticket}_{ds_nodash}.csv")
         stock_info = yf.Ticker(ticket)
         hist = stock_info.history(period="1d",
             interval="1h",
