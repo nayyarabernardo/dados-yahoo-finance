@@ -25,7 +25,7 @@ Este projeto é uma ferramenta valiosa para investidores interessados em obter i
 
 Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow e a API Yahoo Finance.
 
-**Índice**
+## Índice
 
 - [Instalação](#instalação)
 - [Uso](#uso)
