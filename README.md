@@ -5,7 +5,7 @@
 [![License](http://img.shields.io/:license-Apache%202-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/apache-airflow.svg)](https://pypi.org/project/apache-airflow/)
 
-Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow e a API Yfinance. A API Yfinance fornece informações financeiras em tempo real e históricas para uma ampla gama de ativos, incluindo ações, fundos imobiliários e criptomoedas.
+Este projeto é uma implementação pipeline de dados financeiros utilizando a plataforma Apache Airflow e a API Yfinance. A API Yfinance fornece informações financeiras em tempo real e históricas para uma ampla gama de ativos, incluindo ações, fundos imobiliários e criptomoedas.
 
 Neste projeto específico, utilizamos a API Yfinance para baixar dados financeiros dos quatro maiores varejistas do Brasil, listados abaixo:
 
