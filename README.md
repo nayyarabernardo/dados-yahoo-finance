@@ -66,8 +66,6 @@ Você pode configurar as informações dos ativos que deseja analisar, incluindo
 
 ## Analise dos Dados obtidos 
 
-![](img/img.png)
-
 Recentemente, foi observado que as ações da Lojas Americanas sofreram uma queda histórica de 77,33%, a maior desde 1994, após terem entrado em leilão no Ibovespa. Os papéis da empresa foram cotados a R$ 2,44, com um tombo de 79,67%, e oscilaram entre R$ 2,40 a R$ 2,95 durante o dia.
 
 Por outro lado, as outras três empresas analisadas (Carrefour, Assaí e Magazine Luiza) permaneceram estáveis em comparação às Lojas Americanas. Isso pode ser observado no gráfico fornecido.
