@@ -62,6 +62,8 @@ Este projeto inclui operações DAG que baixam dados financeiros de ativos espec
 
 Você pode configurar as informações dos ativos que deseja analisar, incluindo símbolo de ativo, período de tempo e frequência de atualização, nas variáveis de ambiente no arquivo config.py.
 
+![](img/airflow.pipeline.gif)
+
 ## Contribuição
 
 Este projeto é aberto a contribuições. Se você deseja melhorar ou adicionar recursos, sinta-se à vontade para criar uma solicitação pull ou entrar em contato.
