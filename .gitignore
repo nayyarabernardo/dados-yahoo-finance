@@ -22,3 +22,5 @@ airflow.db
 airflow.cfg
 
 *.mp4
+
+*.tf
