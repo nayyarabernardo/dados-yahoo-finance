@@ -83,7 +83,7 @@ Este projeto é aberto a contribuições. Se você deseja melhorar ou adicionar 
 
 ## Licença
 
-Este projeto está disponível sob a licença [APACHE]('LICENSE')
+Este projeto está disponível sob a [licença](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Links
 
