@@ -36,25 +36,25 @@ Este projeto é uma implementação de fluxo de trabalho de análise de dados fi
 
 ## Instalação
 
-Iniciamos configurando o ambiente, instalando o Airflow e executando-o pela primeira vez. Recebemos avisos relacionados ao banco de dados SQLite e ao executor Sequential. Em seguida, conhecemos a biblioteca YFinance e criamos um DAG para extrair dados sobre ações das bolsas de valores.
-
-```bash
-pip install yfinance
-```
+Iniciamos configurando o ambiente, instalando o Airflow e executando-o pela primeira vez. Recebemos avisos relacionados ao banco de dados SQLite e ao executor Sequential. Em seguida, instalado a biblioteca YFinance e criamos um DAG para extrair dados sobre ações das bolsas de valores.
 
 ```bash
 pip install apache-airflow==1.10.12 \
  --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-1.10.12/constraints-3.7.txt"
 ```
 
-Configuramos um executor Local, instalamos o Postgres, criamos um banco de dados e um novo usuário para conectá-lo ao Airflow. Utilizamos o Celery, incluindo sua fila de tarefas e workers, e instalamos o Redis como mediador. Configuramos o Celery juntamente com um worker para executar as tarefas do nosso DAG.
+```bash
+pip install yfinance
+```
+
+Foi configurado um executor Local, instalado o Postgres, criado um banco de dados e um novo usuário para conectá-lo ao Airflow. Utilizando o Celery, incluindo sua fila de tarefas e workers, e instalado o Redis como mediador. Para finalizar as instalações foi configurado o Celery juntamente com um worker para executar as tarefas da DAG.
 
 
 ```bash
 sudo apt install postgresql postgresql-contrib
 ```
 
-O parâmetro "worker_concurrency", que define a quantidade de tarefas simultâneas que um worker pode executar, foi definido, e criamos um novo DAG para extrair dados sobre OS Tickets selecionados.
+O parâmetro "worker_concurrency", que define a quantidade de tarefas simultâneas que um worker pode executar, foi definido, e criando uma DAG para extrair dados sobre os Tickets selecionados.
 
 ## Uso
 
