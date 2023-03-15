@@ -64,7 +64,7 @@ O parâmetro "worker_concurrency", que define a quantidade de tarefas simultâne
 
 ## Uso
 
-Este projeto inclui operações DAG que baixam dados financeiros de ativos específicos da API Yfinance, realizam análises e armazenam os resultados em um banco de dados relacional.
+Este projeto inclui operações DAG que baixam dados financeiros de ativos específicos da Yfinance, realizam análises e armazenam os resultados em um banco de dados relacional.
 
 Você pode configurar as informações dos ativos que deseja analisar, incluindo símbolo de ativo, período de tempo e frequência de atualização, nas variáveis de ambiente no arquivo config.py.
 
