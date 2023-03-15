@@ -1,4 +1,4 @@
-# Apache Airflow: extração de dados da API do Yfinance  
+# Apache Airflow: extração de dados ultilizando a Yfinance  
 
 [![PyPI version](https://badge.fury.io/py/apache-airflow.svg)](https://badge.fury.io/py/apache-airflow)
 [![GitHub Build](https://github.com/apache/airflow/workflows/CI%20Build/badge.svg)](https://github.com/apache/airflow/actions)
@@ -76,7 +76,7 @@ Recentemente, foi observado que as ações da Lojas Americanas sofreram uma qued
 
 Por outro lado, as outras três empresas analisadas (Carrefour, Assaí e Magazine Luiza) permaneceram estáveis em comparação às Lojas Americanas. Isso pode ser observado no gráfico fornecido.
 
-No geral, o uso da API Yfinance e da plataforma Apache Airflow demonstrou ser uma solução eficaz para coletar, analisar e armazenar dados financeiros de várias empresas de maneira automatizada e escalável. Essa abordagem pode ser aplicada a outras empresas e setores, fornecendo insights valiosos para investidores e tomadores de decisão.
+No geral, o uso da Yfinance e da plataforma Apache Airflow demonstrou ser uma solução eficaz para coletar, analisar e armazenar dados financeiros de várias empresas de maneira automatizada e escalável. Essa abordagem pode ser aplicada a outras empresas e setores, fornecendo insights valiosos para investidores e tomadores de decisão.
 
 ![](img/output.png)
 
@@ -92,4 +92,4 @@ Este projeto está disponível sob a [licença](https://www.apache.org/licenses/
 ## Links
 
 - [Documentation Apache Airflow](https://airflow.apache.org/docs/stable/)
-- [Documentation API Yahoo Finance](https://python-yahoofinance.readthedocs.io/en/latest/)
+- [Documentation Yahoo Finance](https://python-yahoofinance.readthedocs.io/en/latest/)
