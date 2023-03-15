@@ -47,12 +47,18 @@ pip install apache-airflow==1.10.12 \
 pip install yfinance
 ```
 
-Foi configurado um executor Local, instalado o Postgres, criado um banco de dados e um novo usuário para conectá-lo ao Airflow. Utilizando o Celery, incluindo sua fila de tarefas e workers, e instalado o Redis como mediador. Para finalizar as instalações foi configurado o Celery juntamente com um worker para executar as tarefas da DAG.
-
-
+Foi configurado um executor Local, instalado o Postgres, criado um banco de dados e um novo usuário para conectá-lo ao Airflow. Utilizando o Celery, incluindo sua fila de tarefas e workers, e instalado o Redis como mediador. 
 ```bash
 sudo apt install postgresql postgresql-contrib
 ```
+
+Para finalizar as instalações foi configurado o Celery juntamente com um worker para executar as tarefas da DAG.
+```
+O Celery Flower é uma ferramenta que nos permite acompanhar o progresso das tarefas, 
+detalhes e status de cada worker que está sendo executado. 
+```
+
+
 
 O parâmetro "worker_concurrency", que define a quantidade de tarefas simultâneas que um worker pode executar, foi definido, e criando uma DAG para extrair dados sobre os Tickets selecionados.
 
