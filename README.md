@@ -23,7 +23,7 @@ As operações DAG incluídas neste projeto baixam dados financeiros dessas empr
 
 Este projeto é uma ferramenta valiosa para investidores interessados em obter insights financeiros sobre as maiores empresas de varejo do Brasil, especialmente sobre a Lojas Americanas.
 
-Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow e a API Yahoo Finance.
+Este projeto é uma implementação de fluxo de trabalho de análise de dados financeiros utilizando a plataforma Apache Airflow e as bibliotecas pandas e Yahoo Finance.
 
 ## Índice
 
